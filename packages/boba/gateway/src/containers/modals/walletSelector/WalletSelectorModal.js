@@ -7,13 +7,14 @@ import { setConnectBOBA, setConnectETH, setWalletConnected } from 'actions/setup
 
 import Modal from 'components/modal/Modal'
 
-import { Box, Typography } from '@mui/material'
+import { Box } from '@mui/material'
 import { Content, BoxCenter } from 'components/modal/Modal.styles'
 
 import networkService from 'services/networkService'
 
 import metaMaskLogo from 'images/metamask.svg'
 import walletConnectLogo from 'images/walletconnect.svg'
+import Button from 'components/button/Button'
 
 function WalletSelectorModal ({ open }) {
 
@@ -56,16 +57,24 @@ function WalletSelectorModal ({ open }) {
       <Box>
         <Content>
           <BoxCenter onClick={() => connectToWallet('metamask')}>
-            <img src={metaMaskLogo} alt='metamask' height="100"/>
-            <Typography variant="body" sx={{fontWeight: 700, mb: 2}}>
-              MetaMask
-            </Typography>
+            <img src={metaMaskLogo} alt='metamask' height="100" />
+            <Button
+              onClick={() => connectToWallet('metamask')}
+              color="primary"
+              variant="contained"
+            >
+              Connect to MetaMask
+            </Button>
           </BoxCenter>
           <BoxCenter onClick={() => connectToWallet('walletconnect')}>
-            <img src={walletConnectLogo} alt='walletconnect' height="100"/>
-            <Typography variant="body" sx={{fontWeight: 700, mb: 2}}>
-              WalletConnect
-            </Typography>
+            <img src={walletConnectLogo} alt='walletconnect' height="100" />
+            <Button
+              onClick={() => connectToWallet('metamask')}
+              color="primary"
+              variant="contained"
+            >
+              Connect to WalletConnect
+            </Button>
           </BoxCenter>
         </Content>
       </Box>
