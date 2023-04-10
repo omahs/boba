@@ -9,6 +9,7 @@
       "packages/boba/*",
       "packages/boba/bundler/packages/*",
       "l2geth",
+      "e2e-test",
       "integration-tests",
       "specs",
       "ops_boba/monitor",
