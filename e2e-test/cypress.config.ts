@@ -25,7 +25,7 @@ export default defineConfig({
     baseUrl: process.env.GATEWAY_URL,
     supportFile: 'support/index.ts',
     fixturesFolder: 'fixtures',
-    specPattern: 'specs/**/*.cy.{js,jsx,ts,tsx}',
+    specPattern: 'specs/**/*.spec.{js,jsx,ts,tsx}',
     // reporter: "cypress-mochawesome-reporter",
     // reporterOptions: {
     //   reportDir: "cypress/reports",
