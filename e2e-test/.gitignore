@@ -14,6 +14,6 @@ docker/videos
 docker/videos-ci
 docker/screenshots
 
-tests/e2e/videos
-tests/e2e/videos-ci
-tests/e2e/screenshots
+videos
+videos-ci
+screenshots

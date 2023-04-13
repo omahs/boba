@@ -5,7 +5,7 @@ export default defineConfig({
   userAgent: 'synpress',
   screenshotsFolder: 'screenshots',
   videosFolder: 'videos',
-  video: false,
+  video: true,
   chromeWebSecurity: true,
   viewportWidth: 1366,
   viewportHeight: 850,

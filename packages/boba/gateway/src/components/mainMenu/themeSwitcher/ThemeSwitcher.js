@@ -12,7 +12,7 @@ function ThemeSwitcher() {
   const theme = useSelector(selectModalState('theme'));
   const dispatch = useDispatch();
   return (
-    <S.ThemeSwitcherTag>
+    <S.ThemeSwitcherTag className='themeSwitcher'>
       {theme === 'light' ?
         <IconButton onClick={() => {
           localStorage.setItem('theme', 'dark');

@@ -159,7 +159,7 @@ const PageHeader = ({ maintenance }) => {
           </S.HeaderWrapper>
         </Container>
       ) : (
-        <S.HeaderWrapper>
+        <S.HeaderWrapper className='header'>
           <Logo
             style={{ width: '140px', paddingTop: '', paddingLeft: '15px' }}
           />
